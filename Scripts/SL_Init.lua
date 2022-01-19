@@ -380,12 +380,12 @@ SL = {
 			InitialValue=0.5,
 		},
 	},
-	-- Fields used to determine the existence of the launcher and the
-	-- available GrooveStats services.
+	-- Fields used to determine whether or not we can connect to the
+	-- GrooveStats services.
 	GrooveStats = {
-		-- Whether we're launching StepMania with a launcher.
+		-- Whether we're connected to the internet or not.
 		-- Determined once on boot in ScreenSystemLayer.
-		Launcher = false,
+		IsConnected = false,
 
 		-- Available GrooveStats services. Subject to change while
 		-- StepMania is running.
