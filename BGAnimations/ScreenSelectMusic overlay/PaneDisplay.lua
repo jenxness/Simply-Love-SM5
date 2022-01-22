@@ -230,7 +230,7 @@ af[#af+1] = RequestResponseActor(17, 50)..{
 	end,
 	ChartParsedCommand=function(self)
 		if not IsServiceAllowed(SL.GrooveStats.GetScores) then
-			if not SL.GrooveStats.IsConnected then
+			if SL.GrooveStats.IsConnected then
 				-- loadingText is made visible when requests complete.
 				-- If we disable the service from a previous request, surface it to the user here.
 				for i=1,2 do
